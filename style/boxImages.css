@@ -1,0 +1,57 @@
+#modalBackground{
+    width: 540px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 4%;
+    left: 33%;
+    box-sizing: border-box; 
+    border-radius: 5px;
+}
+.boxImages{
+    width: 485px;
+    height: 207px;
+    margin: 11px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.images{
+    width: 142px;
+    height: 61px;
+    margin: 3px;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+    text-indent: -9999px;
+}
+.oneImg{
+    background-image: url(img_nature/Cockburn-Ranges-Western-Australia_Jan-Glovac.jpg);
+    background-position: cover;
+}
+.twoImg{
+    background-image: url(img_nature/canada.jpg);
+}
+.threeImg{
+    background-image: url(img_nature/lake.jpg);
+}
+.fourImg{
+    background-image: url(img_nature/maxresdefault.jpg);
+}
+.fiveImg{
+    background-image: url(img_nature/nature_dordogne.jpg);
+}
+.sixImg{
+    background-image: url(img_nature/nepal.jpg);
+}
+.sevenImg{
+    background-image: url(img_nature/ocean.jpg);
+}
+.eightImg{
+    background-image: url(img_nature/theRightsOfNature.jpg);
+}
+.nineImg{
+    background-image: url(img_nature/tree.jpg);
+}
