@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+          <ul class="menu">
+              <li class="only"><img src="images/code.png" alt="" id="firstLi"></li>
+            </ul>
+            <ul class="menu">
+              <li id="bold"><img src="images/bold.png" alt=""></li>
+              <li id="italic"><img src="images/italic.png" alt=""></li>
+              <li id="underline"><img src="images/underline.png" alt=""></li>
+              <li id="del"><img src="images/del.png" alt=""></li>
+            </ul>
+            <ul class="menu">
+              <li id="left"><img src="images/align-left.png" alt=""></li>
+              <li id="center"><img src="images/align-center.png" alt=""></li>
+              <li id="right"><img src="images/align-right.png" alt=""></li>
+            </ul>
+            <ul class="menu">
+              <li class="nav-item dropdown" id="type">
+                <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                  aria-expanded="false"><img src="images/type.png" alt=""></a>
+                <div class="dropdown-menu dark">
+                  <a class="dropdown-item font-family" href="#" style="font-family: Arial, Helvetica, sans-serif">Arial</a>
+                  <a class="dropdown-item font-family" href="#" style="font-family: 'Georgia', serif, Helvetica, sans-serif">Georgia</a>
+                  <a class="dropdown-item font-family" href="#" style="font-family:  'Impact',sans-serif">Impact</a>
+                  <a class="dropdown-item font-family" href="#" style="font-family: Tahoma, Geneva, Verdana, sans-serif ">Tahoma</a>
+                  <a class="dropdown-item font-family" href="#" style="font-family: 'Times New Roman' sans-serif">Time NewRoman</a>
+                  <a class="dropdown-item font-family" href="#" style="font-family: 'Verdana', sans-serif">Vernada</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown" id="font">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                  aria-expanded="false"><img src="images/font (1).png" alt=""></a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item font-size" href="#" style="font-size: 12px">12px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 14px">14px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 16px">16px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 18px">18px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 20px">20px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 22px">22px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 25px">25px</a>
+                  <a class="dropdown-item font-size" href="#" style="font-size: 30px">30px</a>
+                </div>
+              </li>
+              <li id="colors"><img src="images/colors.png" alt="" id="colorsImage"></li>
+              <li id="image"><img src="images/image.png" alt="" id="colorImageFiles"></li>
+            </ul>
+            <ul class="menu">
+              <li class="only"><img src="images/lock.png" id="lock" alt=""></li>
+            </ul>
+      <ul id="menuSecond">
+        <li ><img src="images/save.png" alt="" id="save"></li>
+        <li ><img src="images/fileImg.png" alt="" id="fileImg"></li>
+        <li ><img src="images/ol_list.png" alt="" id="ol_list"></li>
+        <li ><img src="images/ul_list.png" alt="" id="ul_list"></li>
+      </ul>
+    </div>
+    <div id="cont">
+      <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+      </div>
+      <textarea name="" id="contentArea" >
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste!</p>
+      </textarea>
+      <!-- Модальне вікно для кольору тексту -->
+      <div id="modalColors">
+        <div class="boxColor">
+          <div class="color one">rgba(9, 156, 149, 0.548)</div>
+          <div class="color two">rgba(14, 150, 144)</div>
+          <div class="color three">rgb(89, 228, 131)</div>
+          <div class="color four">rgba(7, 104, 67)</div>
+          <div class="color five">rgba(101, 205, 255)</div>
+          <div class="color six">rgba(14, 119, 249)</div>
+          <div class="color seven">rgba(166, 97, 210)</div>
+          <div class="color eight">rgba(75, 8, 125, 0.76)</div>
+          <div class="color nine">rgba(37, 47, 82)</div>
+          <div class="color ten">rgba(15, 29, 49)</div>
+          <div class="color eleven">rgba(234, 181, 60)</div>
+          <div class="color twelve">rgba(239, 173, 25)</div>
+          <div class="color thirteen">rgba(234, 142, 4)</div>
+          <div class="color fourteen">rgba(226, 105, 1)</div>
+          <div class="color fifteen">rgba(208, 73, 73)</div>
+          <div class="color sixteen">rgba(146, 35, 35)</div>
+          <div class="color seventeen">rgba(225, 243, 236, 0.548)</div>
+          <div class="color eighteen">rgba(196, 199, 198)</div>
+          <div class="color nineteen">rgba(151, 175, 169)</div>
+          <div class="color twenty">rgba(128, 136, 133)</div>
+          <div class="color twenty-one">rgba(0, 0, 0)</div>
+        </div>
+      </div>
+      <!-- Модальне вікно для кольору фону -->
+      <div id="modalBackground">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">Images</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">Files</a>
+          </li>
+        </ul>
+        <hr>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="boxColor2">
+              <div class="color2 one">rgba(9, 156, 149, 0.548)</div>
+              <div class="color2 two">rgba(14, 150, 144)</div>
+              <div class="color2 three">rgb(89, 228, 131)</div>
+              <div class="color2 four">rgba(7, 104, 67)</div>
+              <div class="color2 five">rgba(101, 205, 255)</div>
+              <div class="color2 six">rgba(14, 119, 249)</div>
+              <div class="color2 seven">rgba(166, 97, 210)</div>
+              <div class="color2 eight">rgba(75, 8, 125, 0.76)</div>
+              <div class="color2 nine">rgba(37, 47, 82)</div>
+              <div class="color2 ten">rgba(15, 29, 49)</div>
+              <div class="color2 eleven">rgba(234, 181, 60)</div>
+              <div class="color2 twelve">rgba(239, 173, 25)</div>
+              <div class="color2 thirteen">rgba(234, 142, 4)</div>
+              <div class="color2 fourteen">rgba(226, 105, 1)</div>
+              <div class="color2 fifteen">rgba(208, 73, 73)</div>
+              <div class="color2 sixteen">rgba(146, 35, 35)</div>
+              <div class="color2 seventeen">rgba(225, 243, 236, 0.548)</div>
+              <div class="color2 eighteen">rgba(196, 199, 198)</div>
+              <div class="color2 nineteen">rgba(151, 175, 169)</div>
+              <div class="color2 twenty">rgba(128, 136, 133)</div>
+              <div class="color2 twenty-one">rgba(0, 0, 0)</div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="boxImages">
+              <div class="images oneImg">url(img_nature/Cockburn-Ranges-Western-Australia_Jan-Glovac.jpg)</div>
+              <div class="images twoImg">url(img_nature/canada.jpg)</div>
+              <div class="images threeImg">url(img_nature/lake.jpg)</div>
+              <div class="images fourImg">url(img_nature/maxresdefault.jpg)</div>
+              <div class="images fiveImg">url(img_nature/nature_dordogne.jpg)</div>
+              <div class="images sixImg">url(img_nature/nepal.jpg)</div>
+              <div class="images sevenImg">url(img_nature/ocean.jpg)</div>
+              <div class="images eightImg">url(img_nature/theRightsOfNature.jpg)</div>
+              <div class="images nineImg">url(img_nature/tree.jpg)</div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div id="file">
+
+              <div class="input-group mb-3">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Sign in -->
+      <div id="sign">
+        <form name="sign" id="ff">
+          <h3>Sign In</h3>
+          <hr>
+          <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Login here">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+          </div>
+          <button type="button" class="btn btn-secondary btn-lg btn-block" id="signInButton">Sign in</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Create table -->
+<div id="createTable">
+    <form id="fornCreateTable">
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+                <label for="countTR">Count TR:</label>
+                <input type="text" class="form-control" placeholder="Type here.." id="countTR">
+            </div>
+              <div class="form-group"><label for="widthOfTD">Width of TD:</label>
+                <input type="text" class="form-control" placeholder="Type here.." id="widthOfTD">
+              </div>
+              <div class="form-group">
+                  <label for="widthOfBorder">Width of border:</label>
+                  <input type="text" class="form-control" placeholder="Type here.." id="widthOfBorder">
+              </div>
+            <div class="form-group">
+                <button type="reset" class="btn btn-danger btn-lg btn-block" id="resT">Reset</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+                <label for="countTD">Count TD</label>
+                <input type="text" class="form-control" placeholder="Type here.." id="countTD">
+            </div>
+            <div class="form-group">
+                <label for="heightTD">Height of TD</label>
+                <input type="text" class="form-control" placeholder="Type here.." id="heightTD">
+              </div>
+              <div class="form-group">
+                <div class="form-row align-items-center">
+                    <div class="col-sm-8">
+                        <label for="styleOfBorder">Style of border:</label>
+                        <select class="form-control" id="styleOfBorder">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-4">
+                          <label for="colorOfBorder">Color of border:</label>
+                          <input type="text" class="form-control" placeholder="Type here.." id="colorOfBorder">
+                      </div>
+                  </div>
+                </div>
+                   
+                <div class="form-group">
+                    <button type="button" class="btn btn-success btn-lg btn-block" id="creatT">Create list</button>
+                  </div>
+              
+            
+          </div>
+        </div>
+      </form>
+</div>
+
+    <!-- Ordered list -->
+    <div id="orderedList">
+        <form>
+            <div class="form-group">
+              <label for="countLiOrdered">Count li item</label>
+              <input type="email" class="form-control" id="countLiOrdered" aria-describedby="emailHelp" placeholder="Type here..">
+            </div>
+            <div class="form-group">
+                <label for="typeOfOrd">Type mark of list</label>
+                <select class="form-control" id="typeOfOrd">
+                    <option value="1">1</option>
+                    <option value="A">A</option>
+                    <option value="a">a</option>
+                    <option value="I">I</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <button type="reset" class="btn btn-danger btn-lg btn-block" id="resO">Reset</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-success btn-lg btn-block" id="creatO">Create list</button>
+                      </div>
+            </div>
+            
+              </div>
+    
+          </form>
+    </div>
+<!-- Unordered list -->
+<div id="unorderedList">
+    <form>
+        <div class="form-group">
+          <label for="countLiUnordered">Count li item</label>
+          <input type="email" class="form-control" id="countLiUnordered" aria-describedby="emailHelp" placeholder="Type here">
+        </div>
+        <div class="form-group">
+            <label for="typeOfUnord">Type mark of list</label>
+            <select class="form-control" id="typeOfUnord">
+                <option value="circle">circle</option>
+                <option value="disc">disc</option>
+                <option value="decimal">decimal</option>
+                <option value="square">square</option>
+              </select>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <button type="reset" class="btn btn-danger btn-lg btn-block" id="resU">Reset</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-success btn-lg btn-block" id="createU">Create list</button>
+                  </div>
+        </div>
+        
+          </div>
+
+      </form>
+</div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
